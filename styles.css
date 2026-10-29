@@ -62,3 +62,15 @@ h2 {
     flex-direction: column;
     font-family: "Ramabhadra", sans-serif;
 }
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-family: "Ramabhadra", sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
