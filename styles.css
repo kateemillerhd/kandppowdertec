@@ -1,9 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
 body {
-    text-align: center;
-    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
 }
 
-h1,
-p {
-    color: greenyellow;
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-block-start: 1rem;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;
+
+    margin: 0;
+    padding-inline-end: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 22px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ramabhadra", sans-serif;
 }
