@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     box-sizing: border-box;
     width: 100%;
@@ -73,4 +80,21 @@ h3 {
     text-align: center;
     font-size: 28px;
     font-weight: 600;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem 2rem 3rem;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
 }
