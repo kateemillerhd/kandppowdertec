@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --stencil: "Saira Stencil", sans-serif;
+    --regular: "Saira", sans-serif;
+    --dark: #252422;
+    --orange: #EB5E28;
+    --bg: #CCC5B9;
+    --gray: #403D39;
+    --cream: #FFFCF2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--bg);
+}
+
+header {
+    max-width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 2px solid var(--orange);
+    padding-block-start: 1rem;
+
+
+    font-family: var(--stencil);
+    font-weight: 600;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    max-width: 135px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding-inline-end: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+a:hover {
+    color: var(--cream);
+}
+
+h1 {
+    font-family: var(--stencil);
+    color: var(--gray);
+    padding-block-start: 1rem;
+    padding-inline-start: 1rem;
+}
+
+.about {
+    font-family: var(--regular);
+    color: var(--gray);
+    padding: 2rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: var(--stencil);
+    font-size: 28px;
+    padding-inline-start: 1rem;
+}
+
+.service-area {
+    font-family: var(--regular);
+    color: var(--gray);
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.service-area-map {
+    max-width: 100%;
+}
+
+.service-area-map img {
+    max-width: 100%;
+    margin-block: 2rem;
+}
+
+.disclaimer {
+    text-align: center;
+}
