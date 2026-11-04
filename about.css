@@ -79,6 +79,7 @@ h1 {
     color: var(--gray);
     text-align: center;
     margin-block-end: 1rem;
+    margin-block-start: 1rem;
 }
 
 .about {
