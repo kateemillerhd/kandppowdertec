@@ -191,3 +191,30 @@ a:hover {
 .lightbox button:hover {
     color: var(--orange);
 }
+
+.gallery-load-more {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 2.5rem;
+}
+
+#load-more-btn {
+    background-color: var(--orange);
+    color: var(--cream);
+    border: none;
+    border-radius: 5px;
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#load-more-btn:hover {
+    background-color: var(--gray);
+}
+
+#load-more-btn:focus-visible {
+    outline: 3px solid var(--gray);
+    outline-offset: 4px;
+} 

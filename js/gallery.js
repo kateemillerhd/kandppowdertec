@@ -31,11 +31,21 @@ const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("lightbox-close");
 const prevBtn = document.getElementById("lightbox-prev");
 const nextBtn = document.getElementById("lightbox-next");
+const loadMoreBtn = document.getElementById("load-more-btn");
 
+const imagesPerPage = 12;
+let displayedImages = 0;
 let currentImageIndex = 0;
 
 function renderGallery() {
-    galleryImages.forEach((image) => {
+    const nextImages = galleryImages.slice(
+        displayedImages,
+        displayedImages + imagesPerPage
+    );
+
+    const startIndex = displayedImages;
+
+    nextImages.forEach((image, index) => {
         const galleryItem = document.createElement("div");
         galleryItem.classList.add("gallery-item");
 
@@ -45,13 +55,21 @@ function renderGallery() {
         img.loading = "lazy";
 
         galleryItem.addEventListener("click", () => {
-            openLightbox(galleryImages.indexOf(image));
+            openLightbox(startIndex + index);
         });
-        
+       
         galleryItem.appendChild(img);
         galleryGrid.appendChild(galleryItem);
     });
+    
+    displayedImages += nextImages.length;
+
+    if (displayedImages >= galleryImages.length) {
+        loadMoreBtn.style.display = "none";
+    }
 }
+
+loadMoreBtn.addEventListener("click", renderGallery);
 
 function openLightbox(index) {
     currentImageIndex = index;
