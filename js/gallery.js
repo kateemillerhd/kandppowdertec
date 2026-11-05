@@ -1,26 +1,32 @@
 const galleryImages = [
     {
-        src: "images/gallery/originals/photo1.jpg",
+        thumbnail: "images/gallery/thumbnails/photo1.webp",
+        full: "images/gallery/full/photo1.webp",
         alt: "semi-truck frame"
     },
     {
-        src: "images/gallery/originals/photo2.jpg",
+        thumbnail: "images/gallery/thumbnails/photo2.webp",
+        full: "images/gallery/full/photo2.webp",
         alt: "dump lift"
     },
     {
-        src: "images/gallery/originals/photo3.jpg",
+        thumbnail: "images/gallery/thumbnails/photo3.webp",
+        full: "images/gallery/full/photo3.webp",
         alt: "black lo-boy"
     },
     {
-        src: "images/gallery/originals/photo4.jpg",
+        thumbnail: "images/gallery/thumbnails/photo4.webp",
+        full: "images/gallery/full/photo4.webp",
         alt: "sandblasting tracks"
     },
     {
-        src: "images/gallery/originals/photo5.jpg",
+        thumbnail: "images/gallery/thumbnails/photo5.webp",
+        full: "images/gallery/full/photo5.webp",
         alt: "sandblasting semi-truck frame"
     },
     {
-        src: "images/gallery/originals/photo6.jpg",
+        thumbnail: "images/gallery/thumbnails/photo6.webp",
+        full: "images/gallery/full/.photo6.wepb",
         alt: "sandblasting dump truck frame"
     }
 ];
@@ -50,7 +56,7 @@ function renderGallery() {
         galleryItem.classList.add("gallery-item");
 
         const img = document.createElement("img");
-        img.src = image.src;
+        img.src = image.thumbnail;
         img.alt = image.alt;
         img.loading = "lazy";
 
@@ -74,7 +80,7 @@ loadMoreBtn.addEventListener("click", renderGallery);
 function openLightbox(index) {
     currentImageIndex = index;
 
-    lightboxImg.src = galleryImages[currentImageIndex].src;
+    lightboxImg.src = galleryImages[currentImageIndex].full;
     lightboxImg.alt = galleryImages[currentImageIndex].alt;
 
     lightbox.classList.add("active");
@@ -100,7 +106,7 @@ function changeImage(direction) {
         (currentImageIndex + direction + galleryImages.length) %
         galleryImages.length;
 
-    lightboxImg.src = galleryImages[currentImageIndex].src;
+    lightboxImg.src = galleryImages[currentImageIndex].full;
     lightboxImg.alt = galleryImages[currentImageIndex].alt;
 }
 
