@@ -139,3 +139,55 @@ a:hover {
         padding: 2rem 1rem;
     }
 }
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 85%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.lightbox button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 30px;
+}
+
+.lightbox-prev {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox button:hover {
+    color: var(--orange);
+}
