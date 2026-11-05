@@ -1,26 +1,26 @@
 const galleryImages = [
     {
-        src: "images/gallery/photo1.jpg",
+        src: "images/gallery/originals/photo1.jpg",
         alt: "semi-truck frame"
     },
     {
-        src: "images/gallery/photo2.jpg",
+        src: "images/gallery/originals/photo2.jpg",
         alt: "dump lift"
     },
     {
-        src: "images/gallery/photo3.jpg",
+        src: "images/gallery/originals/photo3.jpg",
         alt: "black lo-boy"
     },
     {
-        src: "images/gallery/photo4.jpg",
+        src: "images/gallery/originals/photo4.jpg",
         alt: "sandblasting tracks"
     },
     {
-        src: "images/gallery/photo5.jpg",
+        src: "images/gallery/originals/photo5.jpg",
         alt: "sandblasting semi-truck frame"
     },
     {
-        src: "images/gallery/photo6.jpg",
+        src: "images/gallery/originals/photo6.jpg",
         alt: "sandblasting dump truck frame"
     }
 ];
