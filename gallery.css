@@ -218,3 +218,7 @@ a:hover {
     outline: 3px solid var(--gray);
     outline-offset: 4px;
 } 
+
+#lightbox-img {
+    touch-action: pan-y;
+}

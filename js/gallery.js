@@ -42,6 +42,8 @@ const loadMoreBtn = document.getElementById("load-more-btn");
 const imagesPerPage = 12;
 let displayedImages = 0;
 let currentImageIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 function renderGallery() {
     const nextImages = galleryImages.slice(
@@ -141,5 +143,23 @@ document.addEventListener("keydown", (e) => {
         changeImage(-1);
     }
 });
+
+lightboxImg.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+lightboxImg. addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > 50) {
+        if (swipeDistance < 0) {
+            changeImage(1);
+        } else {
+            changeImage(-1);
+        }
+    }
+}, { passive: true });
 
 renderGallery();
