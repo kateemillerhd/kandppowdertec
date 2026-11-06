@@ -235,16 +235,13 @@ footer {
     div span {
         max-width: 600px;
     }
-
-    .intro {
-        padding-inline: 8rem;
-    }
     
     h1 {
         font-size: 36px;
     }
 
     .intro p {
+        padding-inline: 8rem;
         font-size: 22px;
         text-align: center;
     }
