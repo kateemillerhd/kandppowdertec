@@ -177,6 +177,7 @@ footer {
     align-items: flex-start;
     justify-content: center;
     color: var(--gray);
+    font-size: 10px;
 }
 
 .contact-icon {
@@ -215,15 +216,71 @@ footer {
     height: 30px;
 }
 
-
-
-
-
-
-    .contact-info {
-        font-size: 10px;
+@media (min-width: 768px) {
+    header {
+        font-size: 24px;
+        padding-block: 0.5rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
     }
 
+    ul {
+        display: flex;
+        margin-inline-end: 15px;
+    }
+
+    div span {
+        max-width: 600px;
+    }
+
+    .intro {
+        padding-inline: 8rem;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .footer-div {
+        padding-inline-start: 5rem;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .detail {
+        font-size: 18px;
+    }
+
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .social-container p {
+        font-size: 20px;
+        align-items: center;
+        padding-block-start: 0.5rem;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
 
 
 
