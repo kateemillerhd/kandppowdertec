@@ -37,6 +37,7 @@ const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("lightbox-close");
 const prevBtn = document.getElementById("lightbox-prev");
 const nextBtn = document.getElementById("lightbox-next");
+const lightboxCounter = document.getElementById("lightbox-counter");
 const loadMoreBtn = document.getElementById("load-more-btn");
 
 const imagesPerPage = 12;
@@ -95,7 +96,7 @@ function openLightbox(index) {
     lightbox.setAttribute("aria-hidden", "false");
 
     document.body.style.overflow = "hidden";
-
+    updateCounter();
     closeBtn.focus();
 }
 
@@ -122,6 +123,13 @@ function changeImage(direction) {
 
     lightboxImg.src = galleryImages[currentImageIndex].full;
     lightboxImg.alt = galleryImages[currentImageIndex].alt;
+
+    updateCounter();
+}
+
+function updateCounter() {
+    lightboxCounter.textContent = 
+        `${currentImageIndex + 1} / ${galleryImages.length}`;
 }
 
 prevBtn.addEventListener("click", () => {
