@@ -246,3 +246,32 @@ a:hover {
     font-family: var(--regular);
     color: var(--orange);
 }
+
+@media (min-width: 850px) {
+    header {
+        font-size: 24px;
+        padding-block: 0.5rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    ul {
+        display: flex;
+        margin-inline-end: 15px;
+    }
+
+    div span {
+        max-width: 600px;
+    }
+
+    .gallery-page {
+        padding-block-start: 1rem;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}    
