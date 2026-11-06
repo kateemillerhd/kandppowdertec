@@ -109,6 +109,17 @@ a:hover {
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    display: block;
+    width: 100%;
+}
+
+.gallery-item:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 4px;
 }
 
 .gallery-item img {

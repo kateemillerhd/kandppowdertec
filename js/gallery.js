@@ -26,7 +26,7 @@ const galleryImages = [
     },
     {
         thumbnail: "images/gallery/thumbnails/photo6.webp",
-        full: "images/gallery/full/.photo6.wepb",
+        full: "images/gallery/full/photo6.wepb",
         alt: "sandblasting dump truck frame"
     }
 ];
@@ -42,6 +42,7 @@ const loadMoreBtn = document.getElementById("load-more-btn");
 const imagesPerPage = 12;
 let displayedImages = 0;
 let currentImageIndex = 0;
+let previouslyFocusedElement = null;
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -54,12 +55,15 @@ function renderGallery() {
     const startIndex = displayedImages;
 
     nextImages.forEach((image, index) => {
-        const galleryItem = document.createElement("div");
+        const galleryItem = document.createElement("button");
         galleryItem.classList.add("gallery-item");
+        galleryItem.type = "button";
 
         const img = document.createElement("img");
         img.src = image.thumbnail;
         img.alt = image.alt;
+        galleryItem.setAttribute("aria-label", `View ${image.alt}`);
+        img.alt = "";
         img.loading = "lazy";
 
         galleryItem.addEventListener("click", () => {
@@ -80,6 +84,8 @@ function renderGallery() {
 loadMoreBtn.addEventListener("click", renderGallery);
 
 function openLightbox(index) {
+    previouslyFocusedElement = document.activeElement;
+    
     currentImageIndex = index;
 
     lightboxImg.src = galleryImages[currentImageIndex].full;
@@ -89,6 +95,8 @@ function openLightbox(index) {
     lightbox.setAttribute("aria-hidden", "false");
 
     document.body.style.overflow = "hidden";
+
+    closeBtn.focus();
 }
 
 function closeLightbox() {
@@ -96,6 +104,10 @@ function closeLightbox() {
     lightbox.setAttribute("aria-hidden", "true");
     
     document.body.style.overflow = "";
+
+    if (previouslyFocusedElement) {
+        previouslyFocusedElement.focus();
+    }
 }
 
 closeBtn.addEventListener("click", () => {
@@ -141,6 +153,32 @@ document.addEventListener("keydown", (e) => {
 
     if (e.key === "ArrowLeft") {
         changeImage(-1);
+    }
+
+    if (e.key === "Tab") { 
+        const focusableElements = [
+            clostBtn,
+            prevBtn,
+            nextBtn       
+        ];
+
+        const currentIndex = focusableElements.indexOf(
+            document.activeElement
+        );
+
+        e.preventDefault();
+
+        let nextIndex;
+
+        if (e.shiftKey) {
+            nextIndex = (currentIndex - 1 + focusableElements.length)
+                % focusableElements.length;
+        } else {
+            nextIndex = (currentIndex + 1)
+            % focusableElements.length;
+        }
+
+        focusableElements[nextIndex].focus();
     }
 });
 
