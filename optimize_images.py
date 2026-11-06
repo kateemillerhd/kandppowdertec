@@ -41,8 +41,10 @@ def process_images():
 
         thumb_path = THUMB_DIR / filename
         full_path = FULL_DIR / filename
-        print(f"Thumbnail destination: {thumb_path}")
-        print(f"Full-size destination: {full_path}")
+
+        if thumb_path.exists() and full_path.exists():
+            print(f"Skipping {image_path.name} - already optimized")
+            continue
 
         optimize_image(image_path, thumb_path, 600, 75)
         optimize_image(image_path, full_path, 1800, 85)

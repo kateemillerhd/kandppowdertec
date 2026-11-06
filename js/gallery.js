@@ -28,6 +28,11 @@ const galleryImages = [
         thumbnail: "images/gallery/thumbnails/photo6.webp",
         full: "images/gallery/full/photo6.wepb",
         alt: "sandblasting dump truck frame"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo7.webp",
+        full: "images/gallery/full/photo7.webp",
+        alt: "blue truck chassis"
     }
 ];
 
