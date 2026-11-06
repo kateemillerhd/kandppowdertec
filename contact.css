@@ -95,6 +95,7 @@ h1 {
     padding-inline: 4rem;
     font-weight: 500;
     font-size: 18px;
+    width: 100%;
 }
 
 .grid {
@@ -178,3 +179,54 @@ h1 {
 
 }
 
+@media (min-width: 850px) {
+    header {
+        font-size: 24px;
+        padding-block: 0.5rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    ul {
+        display: flex;
+        margin-inline-end: 15px;
+    }
+
+    div span {
+        max-width: 600px;
+    }
+ 
+    h1 {
+        font-size: 36px;
+    }
+
+    .summary {
+        font-size: 22px;
+    }
+
+    .icon,
+    .social-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .method-container {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;  
+        gap: 1rem;
+    }
+
+    .method-og {
+        justify-content: flex-start;
+        padding-inline-start: 250px;
+    }
+    
+    .method-social {
+        justify-content: flex-end;
+        padding-inline-end: 250px;
+    }
+}
