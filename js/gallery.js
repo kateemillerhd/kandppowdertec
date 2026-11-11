@@ -98,8 +98,152 @@ const galleryImages = [
         thumbnail: "images/gallery/thumbnails/photo20.webp",
         full: "images/gallery/full/photo20.webp",
         alt: "big red trailer 2"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo21.webp",
+        full: "images/gallery/full/photo21.webp",
+        alt: "scriba electric truck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo22.webp",
+        full: "images/gallery/full/photo22.webp",
+        alt: "small black dump trailer"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo23.webp",
+        full: "images/gallery/full/photo23.webp",
+        alt: "black dovetail trailer"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo24.webp",
+        full: "images/gallery/full/photo24.webp",
+        alt: "blasted dump trailer"   
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo25.webp",
+        full: "images/gallery/full/photo25.webp",
+        alt: "black flatbed trailer"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo26.webp",
+        full: "images/gallery/full/photo26.webp",
+        alt: "before pickup chassis"
+    },
+    {
+       thumbnail: "images/gallery/thumbnails/photo27.webp",
+       full: "images/gallery/full/photo27.webp",
+       alt: "blue loboy" 
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo28.webp",
+        full: "images/gallery/full/photo28.webp",
+        alt: "before tanks"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo29.webp",
+        full: "images/gallery/full/photo29.webp",
+        alt: "blasting scriba electric truck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo30.webp",
+        full: "images/gallery/full/photo30.webp",
+        alt: "semi truck chassis before"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo31.webp",
+        full: "images/gallery/full/photo31.webp",
+        alt: "blasted tanks"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo32.webp",
+        full: "images/gallery/full/photo32.webp",
+        alt: "truck cab blasted"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo33.webp",
+        full: "images/gallery/full/photo33.webp",
+        alt: "before and after tanks"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo34.webp",
+        full: "images/gallery/full/photo34.webp",
+        alt: "before and after truck cab"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo35.webp",
+        full: "images/gallery/full/photo35.webp",
+        alt: "tractor blasted"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo36.webp",
+        full: "images/gallery/full/photo36.webp",
+        alt: "truck cab before interior"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo37.webp",
+        full: "images/gallery/full/photo37.webp",
+        alt: "before and after red semi truck chassis"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo38.webp",
+        full: "images/gallery/full/photo38.webp",
+        alt: "blue loboy before"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo39.webp",
+        full: "images/gallery/full/photo39.webp",
+        alt: "before and blasted excavator"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo40.webp",
+        full: "images/gallery/full/photo40.webp",
+        alt: "before and after black rollback"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo41.webp",
+        full: "images/gallery/full/photo41.webp",
+        alt: "blasting town plow"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo42.webp",
+        full: "images/gallery/full/photo42.webp",
+        alt: "blue semitruck chassis"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo43.webp",
+        full: "images/gallery/full/photo43.webp",
+        alt: "before and after black pickup chassis"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo44.webp",
+        full: "images/gallery/full/photo44.webp",
+        alt: "blasting town plow 2"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo45.webp",
+        full: "images/gallery/full/photo45.webp",
+        alt: "before and after yellow tracks"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo46.webp",
+        full: "images/gallery/full/photo46.webp",
+        alt: "scriba electric blasting and after"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo47.webp",
+        full: "images/gallery/full/photo47.webp",
+        alt: "black loboy before"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo49.webp",
+        full: "images/gallery/full/photo49.webp",
+        alt: "black loboy"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo50.webp",
+        full: "images/gallery/full/photo50.webp",
+        alt: "pickup white cab black chassis"
     }
-
 ];
 
 const galleryGrid = document.getElementById("gallery-grid");
