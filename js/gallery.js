@@ -33,7 +33,73 @@ const galleryImages = [
         thumbnail: "images/gallery/thumbnails/photo7.webp",
         full: "images/gallery/full/photo7.webp",
         alt: "blue truck chassis"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo8.webp",
+        full: "images/gallery/full/photo8.webp",
+        alt: "big red trailer"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo9.webp",
+        full: "images/gallery/full/photo9.webp",
+        alt: "painting black loboy"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo10.webp",
+        full: "images/gallery/full/photo10.webp",
+        alt: "painting town plow"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo11.webp",
+        full: "images/gallery/full/photo11.webp",
+        alt: "purple to black dump truck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo12.webp",
+        full: "images/gallery/full/photo12.webp",
+        alt: "blasted loboy and wheels"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo13.webp",
+        full: "images/gallery/full/photo13.webp",
+        alt: "painted black loboy"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo14.webp",
+        full: "images/gallery/full/photo14.webp",
+        alt: "white and black greenscapes dummptruck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo15.webp",
+        full: "images/gallery/full/photo15.webp",
+        alt: "before greenscapes purple dump truck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo16.webp",
+        full: "images/gallery/full/photo16.webp",
+        alt: "black loboy two durings"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo17.webp",
+        full: "images/gallery/full/photo17.webp",
+        alt: "black on black greenscapes dump truck"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo18.webp",
+        full: "images/gallery/full/photo18.webp",
+        alt: "painted black loboy in shop"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo19.webp",
+        full: "images/gallery/full/photo19.webp",
+        alt: "black on black greenscapes dump truck2"
+    },
+    {
+        thumbnail: "images/gallery/thumbnails/photo20.webp",
+        full: "images/gallery/full/photo20.webp",
+        alt: "big red trailer 2"
     }
+
 ];
 
 const galleryGrid = document.getElementById("gallery-grid");
