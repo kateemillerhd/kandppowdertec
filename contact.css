@@ -222,11 +222,13 @@ h1 {
 
     .method-og {
         justify-content: flex-start;
-        padding-inline-start: 250px;
+        padding-inline-start: 1rem;
+
     }
     
     .method-social {
         justify-content: flex-end;
-        padding-inline-end: 250px;
+        padding-inline-end: 1rem;
+        
     }
 }
